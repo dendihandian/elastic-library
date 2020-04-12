@@ -5,4 +5,8 @@ return [
         'title' => 'Books',
         'module' => true,
     ],
+    'authors' => [
+        'title' => 'Authors',
+        'module' => true,
+    ],
 ];
