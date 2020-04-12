@@ -10,7 +10,12 @@ class CreateBooksTables extends Migration
         Schema::create('books', function (Blueprint $table) {
             // this will create an id, a "published" column, and soft delete and timestamps columns
             createDefaultTableFields($table);
-            
+
+            // book fields
+            $table->date('published_date')->nullable();
+            $table->unsignedInteger('pages')->nullable();
+            $table->unsignedBigInteger('publisher_id')->nullable();
+
             $table->integer('position')->unsigned()->nullable();
             
             // add those 2 columns to enable publication timeframe fields (you can use publish_start_date only if you don't need to provide the ability to specify an end date)

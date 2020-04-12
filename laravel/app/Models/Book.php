@@ -21,6 +21,11 @@ class Book extends Model implements Sortable
         'title',
         'description',
         'position',
+
+        // books fields
+        'published_date',
+        'pages',
+        'published_id',
     ];
     
     public $translatedAttributes = [
