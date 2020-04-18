@@ -14,6 +14,10 @@ class CreateAuthorsTables extends Migration
             // feel free to modify the name of this column, but title is supported by default (you would need to specify the name of the column Twill should consider as your "title" column in your module controller if you change it)
             $table->string('title', 200)->nullable();
 
+            $table->string('first_name')->nullable();
+            $table->string('middle_name')->nullable();
+            $table->string('last_name');
+
             // your generated model and form include a description field, to get you started, but feel free to get rid of it if you don't need it
             $table->text('description')->nullable();
             

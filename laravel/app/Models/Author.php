@@ -15,6 +15,10 @@ class Author extends Model
         'published',
         'title',
         'description',
+
+        'first_name',
+        'middle_name',
+        'last_name',
     ];
     
     public $slugAttributes = [
